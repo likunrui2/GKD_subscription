@@ -5,11 +5,12 @@ export default defineGkdApp({
   name: '极略三国',
   groups: [
     {
-      name: '观看广告',
       key: 0,
-      desc: '观看广告',
+      name: '观看广告',
       rules: [
         {
+          key: 0,
+          name: '反馈-x',
           matches: [
             'TextView[text="反馈"] < FrameLayout + LinearLayout > LinearLayout > ImageView',
           ],
@@ -17,6 +18,22 @@ export default defineGkdApp({
           activityIds: [
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Landscape_Activity',
           ],
+        },
+        {
+          key: 1,
+          name: 'xx s-跳过',
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Landscape_Activity',
+          matches: 'TextView[text*="s"] + TextView[text*="跳过"]',
+          snapshotUrls: 'https://i.gkd.li/i/16346416',
+        },
+        {
+          key: 2,
+          name: 'xx s 后续播',
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Landscape_Activity',
+          matches: 'TextView[text="后续播"] <7 View +4 View > Image',
+          snapshotUrls: 'https://i.gkd.li/i/16346791',
         },
       ],
     },
