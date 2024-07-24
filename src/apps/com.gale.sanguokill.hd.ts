@@ -31,6 +31,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/16346416',
           matchTime: 70000,
           actionMaximum: 1,
+          matchDelay: 10000,
         },
         {
           key: 2,
