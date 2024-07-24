@@ -19,7 +19,6 @@ export default defineGkdApp({
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Landscape_Activity',
           ],
           matchTime: 70000,
-          actionMaximum: 1,
           matchDelay: 10000,
         },
         {
