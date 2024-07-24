@@ -18,22 +18,27 @@ export default defineGkdApp({
           activityIds: [
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Landscape_Activity',
           ],
+          matchDelay: 10000,
         },
         {
           key: 1,
           name: 'xx s-跳过',
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Landscape_Activity',
-          matches: 'TextView[text*="s"] + TextView[text*="跳过"]',
+          matches: '@TextView[text$="跳过"] - TextView[text$="s"]',
           snapshotUrls: 'https://i.gkd.li/i/16346416',
+          matchDelay: 10000,
+          matchTime: 70000,
         },
         {
           key: 2,
           name: 'xx s 后续播',
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Landscape_Activity',
-          matches: 'TextView[text="后续播"] <7 View +4 View > Image',
+          matches: '@Image < View -4 View > TextView[text="后续播"]',
           snapshotUrls: 'https://i.gkd.li/i/16346791',
+          matchTime: 30000,
+          actionMaximum: 1,
         },
       ],
     },

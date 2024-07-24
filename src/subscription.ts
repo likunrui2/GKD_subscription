@@ -6,7 +6,7 @@ import globalGroups from './globalGroups';
 export default defineGkdSubscription({
   id: 333,
   name: 'likunrui2的GKD订阅',
-  version: 1,
+  version: 2,
   author: 'likunrui2',
   checkUpdateUrl: './gkd.version.json5',
   supportUri: 'https://github.com/gkd-kit/subscription-template',
