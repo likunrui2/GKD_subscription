@@ -4,8 +4,8 @@ import categories from './categories';
 import globalGroups from './globalGroups';
 
 export default defineGkdSubscription({
-  id: 333,
-  name: 'likunrui2的GKD订阅',
+  id: 334,
+  name: 'likunrui2的GKD订阅 v2b',
   version: 1,
   author: 'likunrui2',
   checkUpdateUrl: './gkd.version.json5',
