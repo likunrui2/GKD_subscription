@@ -38,7 +38,6 @@ export default defineGkdApp({
           matches: '@Image < View -4 View > TextView[text="后续播"]',
           snapshotUrls: 'https://i.gkd.li/i/16346791',
           matchTime: 30000,
-          actionMaximum: 1,
         },
       ],
     },
